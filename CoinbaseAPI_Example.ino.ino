@@ -7,8 +7,8 @@
 
 #include <CoinbaseAPI.h>
 
-char ssid[] = "BrillHouse";
-char password[] = "27072017";
+char ssid[] = "";
+char password[] = "";
 
 CoinbaseAPI coin("EUR");
 
