@@ -6,7 +6,7 @@ CoinbaseAPI::CoinbaseAPI(char* currency){
 
 void CoinbaseAPI::LoadValue(char* coin){
 	client.setInsecure();
-	if (sender.begin(client,"https://api.coinbase.com/v2/prices/" + String(coin) + "-" + String(currency) + "/buy")){
+	if (sender.begin(client,"https://api.coinbase.com/v2/prices/" + String(coin) + "-" + String(currency) + "/spot")){
 		int httpCode = sender.GET(); 
 		if (httpCode > 0) {
 			if (httpCode == 200) {
