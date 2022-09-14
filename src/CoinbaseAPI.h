@@ -11,7 +11,6 @@ class CoinbaseAPI
 	private:
 		HTTPClient sender;
 		WiFiClientSecure client;
-		String JsonWorker(String script);
 		char* currency;
 		String Base;
 		String Currency;
